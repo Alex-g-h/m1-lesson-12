@@ -21,7 +21,9 @@ function makeDomestic(isDomestic) {
 }
 
 const newDog = makeDomestic.bind(dog, true)();
-console.log(newDog);
+console.log('newDog:', newDog);
 
-const newBird = makeDomestic.call(bird, false);
-console.log(newBird);
+const newBird1 = makeDomestic.call(bird, false);
+console.log('newBird1 call:', newBird1);
+const newBird2 = makeDomestic.apply(bird, [false]);
+console.log('newBird2 apply', newBird2);
