@@ -22,7 +22,7 @@ student = {
     }
     return this;
   }
-}
+};
 
 student
   .improveLevel()
